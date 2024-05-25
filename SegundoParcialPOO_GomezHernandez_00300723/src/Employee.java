@@ -5,6 +5,6 @@ public class Employee extends Person implements DepartmentComponent {
 
     @Override
     public void showWorks() {
-        System.out.println("I am an employee, I do work!");
+        System.out.println("[Employee " + getName() + "] I am an employee, I do work!");
     }
 }

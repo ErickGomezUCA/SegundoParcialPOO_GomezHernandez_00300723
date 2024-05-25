@@ -23,7 +23,7 @@ public class Department implements DepartmentComponent {
 
     @Override
     public void showWorks() {
-        System.out.println("[Department " + name + "]: Consists of the following workers");
+        System.out.println("[Department " + name + "]: Consists of the following workers:");
         for (DepartmentComponent worker : workers) {
             worker.showWorks();
         }
