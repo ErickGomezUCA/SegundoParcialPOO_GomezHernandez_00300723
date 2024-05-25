@@ -44,9 +44,8 @@ public class Employee implements DepartmentComponent {
         this.workPosition = workPosition;
     }
 
-
     @Override
-    public void showWorks() {
+    public void showInformation() {
         System.out.println("[Employee " + getName() + "] I am " + age + " years old. My work position is: " + workPosition);
     }
 }
