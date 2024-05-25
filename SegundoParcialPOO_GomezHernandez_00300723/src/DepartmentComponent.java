@@ -1,3 +1,3 @@
 public interface DepartmentComponent {
-    void showWorkers();
+    void showWorks();
 }
