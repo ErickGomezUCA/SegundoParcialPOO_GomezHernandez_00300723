@@ -5,32 +5,32 @@ public class Department implements DepartmentComponent {
     // Common Composite attributes
     private String name;
     // Composite content
-    private Vector<DepartmentComponent> workers;
+    private Vector<DepartmentComponent> content;
 
     public Department(String name) {
         this.name = name;
-        workers = new Vector<DepartmentComponent>();
+        content = new Vector<DepartmentComponent>();
     }
 
     public void add(DepartmentComponent component) {
-        workers.add(component);
+        content.add(component);
     }
 
     public void remove(DepartmentComponent component) {
-        workers.remove(component);
+        content.remove(component);
     }
 
-    public Vector<DepartmentComponent> getWorkers() {
-        return workers;
+    public Vector<DepartmentComponent> getContent() {
+        return content;
     }
 
     // Implemented execute method
     @Override
     public void showInformation() {
         System.out.println("[Department " + name + "]: Consists of the following workers:");
-        for (DepartmentComponent worker : workers) {
+        for (DepartmentComponent element : content) {
             // Delegate printing information to content of composite
-            worker.showInformation();
+            element.showInformation();
         }
     }
 }
