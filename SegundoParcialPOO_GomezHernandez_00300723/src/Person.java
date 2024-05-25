@@ -1,2 +1,45 @@
-package PACKAGE_NAME;public class Person {
+public abstract class Person {
+    private String name;
+    private int age;
+    private int id;
+    private String workPosition;
+
+    public Person(String name, int age, int id, String workPosition) {
+        this.name = name;
+        this.age = age;
+        this.id = id;
+        this.workPosition = workPosition;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getWorkPosition() {
+        return workPosition;
+    }
+
+    public void setWorkPosition(String workPosition) {
+        this.workPosition = workPosition;
+    }
 }
