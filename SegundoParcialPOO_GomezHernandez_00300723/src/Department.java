@@ -1,6 +1,6 @@
 import java.util.Vector;
 
-// Composite
+// Composite 2: Departments
 public class Department implements DepartmentComponent {
     // Common Composite attributes
     private String name;
