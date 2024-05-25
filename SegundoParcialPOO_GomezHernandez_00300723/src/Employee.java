@@ -1,40 +1,11 @@
 // Leaf
-public class Employee implements DepartmentComponent {
+public class Employee extends Person implements DepartmentComponent {
     // Common employees attributes
-    private String name;
-    private int age;
-    private int id;
     private String workPosition;
 
     public Employee(String name, int age, int id, String workPosition) {
-        this.name = name;
-        this.age = age;
-        this.id = id;
+        super(name, age, id);
         this.workPosition = workPosition;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getWorkPosition() {
@@ -48,6 +19,6 @@ public class Employee implements DepartmentComponent {
     // Implemented execute method
     @Override
     public void showInformation() {
-        System.out.println("[Employee " + getName() + "] I am " + age + " years old. My work position is: " + workPosition);
+        System.out.println("[Employee " + getName() + "] I am " + getAge() + " years old. My work position is: " + workPosition);
     }
 }
