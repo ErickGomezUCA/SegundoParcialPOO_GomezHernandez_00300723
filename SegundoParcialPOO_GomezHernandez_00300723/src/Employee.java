@@ -1,5 +1,6 @@
+// Leaf
 public class Employee implements DepartmentComponent {
-
+    // Common employees attributes
     private String name;
     private int age;
     private int id;
@@ -44,6 +45,7 @@ public class Employee implements DepartmentComponent {
         this.workPosition = workPosition;
     }
 
+    // Implemented execute method
     @Override
     public void showInformation() {
         System.out.println("[Employee " + getName() + "] I am " + age + " years old. My work position is: " + workPosition);
